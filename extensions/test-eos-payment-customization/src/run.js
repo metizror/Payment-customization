@@ -9,7 +9,7 @@
 * @type {FunctionRunResult}
 */
 const NO_CHANGES = {
-  operations: [],
+  operations: [], 
 };
 
 /**
@@ -60,7 +60,7 @@ export function run(input) {
   if (!hiddenPaymentMethodIds) {
     return NO_CHANGES;
   }
-  
+
 
   const hidePaymentMethod = input.paymentMethods
     .find(method => method.name.includes("Cash on Delivery"));

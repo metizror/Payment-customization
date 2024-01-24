@@ -11,7 +11,7 @@ type = "function"
   input_query = "src/run.graphql"
   export = "run"
 
-  [extensions.build]
+  [extensions.build] 
   command = ""
   path = "dist/function.wasm"
 
