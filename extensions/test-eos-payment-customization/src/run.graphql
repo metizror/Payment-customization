@@ -1,0 +1,35 @@
+query RunInput ($selectedmethod: [ID!]){
+  cart {
+    cost {
+      totalAmount {
+        amount
+      }
+    }
+    lines {
+      id
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          product {
+            id
+            metafield(namespace: "my-namespace", 
+            key: "my-key") { 
+                value
+              }
+              inAnyCollection(ids: $selectedmethod)
+          }
+        }
+      }
+    }
+  }
+  paymentMethods {
+    id
+    name
+  }
+  paymentCustomization {
+    metafield(namespace: "$app:test-eos-payment-customization", key: "function-configuration") {
+      value
+    }
+  }
+}

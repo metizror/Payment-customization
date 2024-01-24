@@ -1,0 +1,16 @@
+{
+          "app": {
+            "title": "test-eos-payment-customization"
+          },
+          "apiType": "payment_customization",
+          "title": "test-eos-payment-customization",
+          "id": "9aaa879a-a374-40fb-98b4-570ec056723d"
+        }
+
+
+        "paymentCustomizationCreate": {
+          "paymentCustomization": {
+            "id": "gid://shopify/PaymentCustomization/4292654"
+          },
+          "userErrors": []
+        }
