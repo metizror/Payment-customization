@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@shopify/app": "3.52.0",
-    "@shopify/cli": "3.52.0"
+    "@shopify/cli": "3.94.3"
   },
   "trustedDependencies": [
     "@shopify/plugin-cloudflare"
